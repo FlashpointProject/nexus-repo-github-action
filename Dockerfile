@@ -12,7 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM sonatype/nexus-platform-cli
+ARG BASE_IMAGE=nexus-platform-cli:local
+FROM ${BASE_IMAGE}
 LABEL com.github.actions.name="Nexus Repository Publisher for GitHub Actions" \
     com.github.actions.description="Publish components from GitHub Action workflow to Nexus Repository."
 
