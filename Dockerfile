@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ARG BASE_IMAGE=nexus-platform-cli:local
+ARG BASE_IMAGE=colin969/nexus-platform-cli:latest
 FROM ${BASE_IMAGE}
 LABEL com.github.actions.name="Nexus Repository Publisher for GitHub Actions" \
     com.github.actions.description="Publish components from GitHub Action workflow to Nexus Repository."
